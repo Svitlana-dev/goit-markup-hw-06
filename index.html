@@ -46,6 +46,91 @@
             </li>
           </ul>
         </address>
+        <button class="open-menu" type="button" data-modal-open="modal2">
+          <svg class="icon-menu" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-modal="modal2">
+        <button class="mobile-close" type="button" data-modal-close="modal2">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-list">
+            <a class="mobile-link current" href="./index.html">Studio </a>
+          </li>
+
+          <li class="mobile-list">
+            <a class="mobile-link" href="">Portfolio </a>
+          </li>
+
+          <li class="mobile-list">
+            <a class="mobile-link" href="">Contacts </a>
+          </li>
+        </ul>
+        <ul class="mobile-add">
+          <li class="mobile-add-list">
+            <a class="mobile-add-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+
+          <li class="mobile-add-list">
+            <a class="mobile-add-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="foot-icons">
+          <li class="foot-list">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="foot-link"
+            >
+              <svg class="icon-foot" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="foot-list">
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              class="foot-link"
+            >
+              <svg class="icon-foot" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="foot-list">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="foot-link"
+            >
+              <svg class="icon-foot" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="foot-list">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="foot-link"
+            >
+              <svg class="icon-foot" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -54,7 +139,9 @@
       <section class="main">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="main-button" type="button">Order Service</button>
+          <button class="main-button" type="button" data-modal-open="modal1">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -124,14 +211,17 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-color">
-              <div class="team-img">
-                <img
-                  src="./images/img-3.jpg"
-                  alt="Mark Guerrero"
-                  width="264"
-                  height="260"
-                />
-              </div>
+              <img
+                class="team-img"
+                src="./images/guerrero@1x.jpg"
+                srcset="
+                  ./images/guerrero@1x.jpg 1x,
+                  ./images/guerrero@2x.jpg 2x
+                "
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+              />
               <div class="team-info">
                 <h3 class="team-list-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -185,14 +275,14 @@
             </li>
 
             <li class="team-color">
-              <div class="team-img">
-                <img
-                  src="./images/img-2.jpg"
-                  alt="Tom Ford"
-                  width="264"
-                  height="260"
-                />
-              </div>
+              <img
+                class="team-img"
+                src="./images/ford@1x.jpg"
+                srcset="./images/ford@1x.jpg 1x, ./images/ford@2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+                height="260"
+              />
               <div class="team-info">
                 <h3 class="team-list-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -246,14 +336,14 @@
             </li>
 
             <li class="team-color">
-              <div class="team-img">
-                <img
-                  src="./images/img-1.jpg"
-                  alt="Camila Garcia"
-                  width="264"
-                  height="260"
-                />
-              </div>
+              <img
+                class="team-img"
+                src="./images/garcia@1x.jpg"
+                srcset="./images/garcia@1x.jpg 1x, ./images/garcia@2x.jpg 2x"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+              />
               <div class="team-info">
                 <h3 class="team-list-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -307,14 +397,14 @@
             </li>
 
             <li class="team-color">
-              <div class="team-img">
-                <img
-                  src="./images/img.jpg"
-                  alt="Daniel Wilson"
-                  width="264"
-                  height="260"
-                />
-              </div>
+              <img
+                class="team-img"
+                src="./images/wilson@1x.jpg"
+                srcset="./images/wilson@1x.jpg 1x, ./images/wilson@2x.jpg 2x"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+              />
               <div class="team-info">
                 <h3 class="team-list-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -379,7 +469,11 @@
               <div class="portf-block">
                 <img
                   class="portf-img"
-                  src="./images/img-4.jpg"
+                  src="./images/banking@1x.jpg"
+                  srcset="
+                    ./images/banking@1x.jpg 1x,
+                    ./images/banking@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -400,7 +494,11 @@
               <div class="portf-block">
                 <img
                   class="portf-img"
-                  src="./images/img-5.jpg"
+                  src="./images/cashless@1x.jpg"
+                  srcset="
+                    ./images/cashless@1x.jpg 1x,
+                    ./images/cashless@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -421,7 +519,11 @@
               <div class="portf-block">
                 <img
                   class="portf-img"
-                  src="./images/img-6.jpg"
+                  src="./images/meditation@1x.jpg"
+                  srcset="
+                    ./images/meditation@1x.jpg 1x,
+                    ./images/meditation@2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -442,7 +544,8 @@
               <div class="portf-block">
                 <img
                   class="portf-img"
-                  src="./images/img-7.jpg"
+                  src="./images/taxi@1x.jpg"
+                  srcset="./images/taxi@1x.jpg 1x, ./images/taxi@2x.jpg 2x"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -463,7 +566,8 @@
               <div class="portf-block">
                 <img
                   class="portf-img"
-                  src="./images/img-8.jpg"
+                  src="./images/screen@1x.jpg"
+                  srcset="./images/screen@1x.jpg 1x, ./images/screen@2x.jpg 2x"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -484,7 +588,11 @@
               <div class="portf-block">
                 <img
                   class="portf-img"
-                  src="./images/img-9.jpg"
+                  src="./images/courses@1x.jpg"
+                  srcset="
+                    ./images/courses@1x.jpg 1x,
+                    ./images/courses@2x.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -587,9 +695,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay" data-modal="modal1">
       <div class="modal">
-        <button class="modal-close" type="button">
+        <button class="modal-close" type="button" data-modal-close="modal1">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -604,6 +712,7 @@
                 id="user-name"
                 type="text"
                 name="user-name"
+                required
               />
               <svg class="modal-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -618,6 +727,7 @@
                 id="user-phone"
                 type="tel"
                 name="user-phone"
+                required
               />
               <svg class="modal-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -632,6 +742,7 @@
                 id="user-email"
                 type="email"
                 name="user-email"
+                required
               />
               <svg class="modal-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
@@ -661,13 +772,16 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="#" class="policy">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a href="#" class="policy">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="submit">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
