@@ -229,10 +229,10 @@ img {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  padding: 72px 16px 40px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 16px;
   z-index: 999;
   visibility: hidden;
   opacity: 0;
@@ -253,12 +253,17 @@ img {
   }
 }
 
-.mob-nav {
-  margin-bottom: auto;
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 40px;
 }
 
-.mobile-nav {
-  margin-bottom: 168px;
+.mob-nav {
+  margin-bottom: auto;
 }
 
 .mobile-list {
@@ -288,7 +293,7 @@ img {
   color: #404bbf;
 }
 
-.mobile-add {
+.mob-add {
   margin-bottom: 48px;
 }
 
